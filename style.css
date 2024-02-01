@@ -1,0 +1,68 @@
+
+body {
+	background-image: linear-gradient(rgb(95, 146, 95), rgb(192, 161, 104));
+	margin: 7%;
+	overflow: hidden;
+  }
+  
+  .container {
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .cell {
+	border: rgb(0, 0, 0) solid 3px;
+	width: 100px;
+	height: 100px;
+	color: white;
+	font-size: 60px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 100px;
+  }
+  
+  .row {
+	display: flex;
+  }
+  
+  #reset,
+  #numbers,
+  #difficulty {
+	color: white;
+	background-color: rgb(73, 70, 70);
+	border: rgb(92, 168, 167) solid 1px;
+	padding: 5px 15px;
+	margin: 30px 20px;
+  }
+  
+  #overlay {
+	font-weight: bold;
+	font-size: 75px;
+	text-shadow: 2px 2px 8px rgb(0, 0, 0);
+	color: rgb(123, 68, 68);
+	margin: 10px;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1000;
+	
+  }
+  
+  @keyframes show {
+	0% {
+	  opacity: 0;
+	}
+	20% {
+	  opacity: 1;
+	}
+	90% {
+	  opacity: 1;
+	}
+	100% {
+	  opacity: 0;
+	}
+  }
